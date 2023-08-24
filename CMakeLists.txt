@@ -80,8 +80,9 @@ IF (WIN32)
 ENDIF (WIN32)
 
 # Define the main library.
-ADD_LIBRARY(snappy SHARED
-        snappy-c.cc
+# ADD_LIBRARY(snappy SHARED
+ADD_LIBRARY(snappy STATIC        
+	snappy-c.cc
         snappy-c.h
         snappy-sinksource.cc
         snappy-sinksource.h
